@@ -1,0 +1,48 @@
+---
+title: "Plot"
+author: "Roheet Narayanan"
+date: "December 12,2017"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+
+```{r plot, echo=FALSE,results='hide',message=FALSE}
+
+
+mydata <- read.csv("C:\\Users\\RoheetNarayanan\\Mispriced-Diamonds.csv") 
+#install.packages("ggplot2")
+library(ggplot2)
+ggplot(data=mydata[mydata$carat<2.5,],aes(x=carat,y=price,colour=clarity))+
+  geom_point(alpha=0.1)+
+  geom_smooth()
+
+```
+
+## R Markdown
+
+
+
+
+## SUMMARY
+
+This is a ggplot for Mispriced Diamonds.The plot is carat against price.
+
+The Above plot shows the percentage of carity in various types of diamonds. 
+
+The clarity are of 6 types
+
+1.Flawless[F]
+
+2.Internally Flawless[IF]
+
+3.Very Slightly Included[VS1,VS2]
+
+4.Very Very Slightly Included[VVS1,VVS2]
+
+5.Slightly Included[S1,S2,S2]
+
+6.Included[I1,I2,I3]

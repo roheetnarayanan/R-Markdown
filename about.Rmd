@@ -1,0 +1,23 @@
+---
+title: "DIAMONDS"
+output: html_document
+---
+This is my First R Markdown.
+I have included datasets for diamonds and executed a plot of carat to price based on their clarity. 
+
+
+The clarity are of 6 types
+
+1.Flawless[F].
+
+2.Internally Flawless[IF].
+
+3.Very Slightly Included[VS1,VS2].
+
+4.Very Very Slightly Included[VVS1,VVS2].
+
+5.Slightly Included[S1,S2,S2].
+
+6.Included[I1,I2,I3].
+
+
